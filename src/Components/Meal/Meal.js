@@ -5,7 +5,7 @@ const Meal = (props) => {
     const{strMealThumb,strArea,strInstructions,idMeal}=props.meal;
     let navigate = useNavigate();
     const showFoodDetails=()=>{
-       navigate(`/about/${idMeal}`)
+       navigate(`about/${idMeal}`)
     }
     return (
         <div className='col-md-4 col-sm-6 border border-primary  gy-3'>

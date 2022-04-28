@@ -5,7 +5,7 @@ import FoodDetail from '../FoodDetail/FoodDetail';
 const About = () => {
     const {foodId} = useParams();
     const [foodDetails,setFoodDetails]=useState([]);
-     console.log(foodDetails)
+    //  console.log(foodDetails)
     useEffect(()=>{
         const url=`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${foodId}`;
         fetch(url)
